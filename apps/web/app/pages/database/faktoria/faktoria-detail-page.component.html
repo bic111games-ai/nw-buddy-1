@@ -1,0 +1,18 @@
+<nwb-item-card
+  [entity]="itemId()"
+  [enableInfoLink]="true"
+  [enableTracker]="true"
+  [enableLink]="true"
+  [enableTasks]="true"
+  [nwbScreenshotFrame]="card.store.fullName() | nwText"
+  (itemChange)="onEntity($event)"
+  #card="card"
+>
+  <nwb-item-detail-salvage-rewards class="mt-2" />
+  <nwb-item-detail-salvage-info class="mt-2" />
+  <nwb-item-detail-model-viewer class="mt-2" />
+  <nwb-consumable-detail [consumableId]="itemId()" #cd [class.hidden]="!cd.store.consumable()" class="mt-2" />
+  <nwb-item-detail-set-items class="mt-2" />
+  <nwb-item-detail-transforms class="mt-2" />
+</nwb-item-card>
+<nwb-faktoria-page-tabs [itemId]="itemId()" class="mt-2" />

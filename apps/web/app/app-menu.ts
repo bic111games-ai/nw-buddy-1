@@ -67,6 +67,7 @@ export const APP_MENU: AppMenuGroup[] = [
     icon: svgDatabase,
     items: [
       { label: 'Items', path: '/items', svgIcon: svgGrid },
+      { label: 'Faktoria', path: '/faktoria', svgIcon: svgGrid },
       { label: 'Housing', path: '/housing', svgIcon: svgChair },
       { label: 'Crafting', path: '/crafting', svgIcon: svgHammer },
 
